@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WorkTaskStatsDataSet" targetNamespace="http://tempuri.org/WorkTaskStatsDataSet.xsd" xmlns:mstns="http://tempuri.org/WorkTaskStatsDataSet.xsd" xmlns="http://tempuri.org/WorkTaskStatsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WorkTaskStatsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="WorkTaskStatsDataSet" msprop:Generator_UserDSName="WorkTaskStatsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="worktaskstats" msprop:Generator_TableClassName="worktaskstatsDataTable" msprop:Generator_TableVarName="tableworktaskstats" msprop:Generator_RowChangedName="worktaskstatsRowChanged" msprop:Generator_TablePropName="worktaskstats" msprop:Generator_RowDeletingName="worktaskstatsRowDeleting" msprop:Generator_RowChangingName="worktaskstatsRowChanging" msprop:Generator_RowEvHandlerName="worktaskstatsRowChangeEventHandler" msprop:Generator_RowDeletedName="worktaskstatsRowDeleted" msprop:Generator_RowClassName="worktaskstatsRow" msprop:Generator_UserTableName="worktaskstats" msprop:Generator_RowEvArgName="worktaskstatsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
+              <xs:element name="WorkTaskID" msprop:Generator_ColumnVarNameInTable="columnWorkTaskID" msprop:Generator_ColumnPropNameInRow="WorkTaskID" msprop:Generator_ColumnPropNameInTable="WorkTaskIDColumn" msprop:Generator_UserColumnName="WorkTaskID" type="xs:int" />
+              <xs:element name="WorkTask" msprop:Generator_ColumnVarNameInTable="columnWorkTask" msprop:Generator_ColumnPropNameInRow="WorkTask" msprop:Generator_ColumnPropNameInTable="WorkTaskColumn" msprop:Generator_UserColumnName="WorkTask" type="xs:string" />
+              <xs:element name="HoursPerTask" msprop:Generator_ColumnVarNameInTable="columnHoursPerTask" msprop:Generator_ColumnPropNameInRow="HoursPerTask" msprop:Generator_ColumnPropNameInTable="HoursPerTaskColumn" msprop:Generator_UserColumnName="HoursPerTask" type="xs:decimal" />
+              <xs:element name="ItemCounter" msprop:Generator_ColumnVarNameInTable="columnItemCounter" msprop:Generator_ColumnPropNameInRow="ItemCounter" msprop:Generator_ColumnPropNameInTable="ItemCounterColumn" msprop:Generator_UserColumnName="ItemCounter" type="xs:int" />
+              <xs:element name="Mean" msprop:Generator_ColumnVarNameInTable="columnMean" msprop:Generator_ColumnPropNameInRow="Mean" msprop:Generator_ColumnPropNameInTable="MeanColumn" msprop:Generator_UserColumnName="Mean" type="xs:decimal" />
+              <xs:element name="Variance" msprop:Generator_ColumnVarNameInTable="columnVariance" msprop:Generator_ColumnPropNameInRow="Variance" msprop:Generator_ColumnPropNameInTable="VarianceColumn" msprop:Generator_UserColumnName="Variance" type="xs:decimal" />
+              <xs:element name="StandardDeviation" msprop:Generator_ColumnVarNameInTable="columnStandardDeviation" msprop:Generator_ColumnPropNameInRow="StandardDeviation" msprop:Generator_ColumnPropNameInTable="StandardDeviationColumn" msprop:Generator_UserColumnName="StandardDeviation" type="xs:decimal" />
+              <xs:element name="Limiter" msprop:Generator_ColumnVarNameInTable="columnLimiter" msprop:Generator_ColumnPropNameInRow="Limiter" msprop:Generator_ColumnPropNameInTable="LimiterColumn" msprop:Generator_UserColumnName="Limiter" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:worktaskstats" />
+      <xs:field xpath="mstns:TransactionID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
